@@ -38,12 +38,12 @@ ie.  \\Server\Share\
     
 4.  Place all these files in \\Server\Share\Utilities
         (Google for download locations)
-        From SysInternals:
-              autorunsc64.exe
-              PsInfo64.exe
-              RAMMap.exe
-              PSLoggedon64.exe
-              tcpvcon.exe
+		From SysInternals:
+		      autorunsc64.exe
+		      PsInfo64.exe
+		      RAMMap.exe
+		      PSLoggedon64.exe
+		      tcpvcon.exe
 
           From Nirsoft:
               BrowsingHistoryView.exe

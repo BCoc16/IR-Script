@@ -12,12 +12,12 @@
 #### -- some sysinternals tools
 #### These are prerequisites.
 
-## _______________________________________________
+## 
 
 
 **Run local or remote with psexec.**  (Download PSExec from Microsoft and place in C:\PsTools\ or modify as desired)
 
-## _______________________________________________
+## 
 
 Some adjustments do need to be made in the file.
 

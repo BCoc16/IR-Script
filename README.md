@@ -7,6 +7,9 @@
 
 #### To enable or disable a line, edit the file and add/remove REM.
 
+#### Output goes to the SHARE location you setup.
+####   Account used to run needs to be a Local Administrator and needs MODIFY on the share location.
+
 #### This script calls other programs such as (These are prerequisites if you wish to enable):
 ```
 - some nirsoft tools
@@ -99,4 +102,5 @@ From Nirsoft:
 or with list of computers in file.
     C:\Analysis\PsExec64.exe @c:\analysis\computers.txt -u domain\<username> -w c:\temp -f -e -h -c "C:\Analysis\Working.bat"
 
-NOT COMPLETED:  Check Back in a few Weeks.
+![Sample](https://github.com/BCoc16/IR-Script/blob/master/Working1.png)
+

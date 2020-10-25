@@ -1,32 +1,68 @@
 # IR-Script       :+1:
 ### Compilation of commands entered into a script for Information Gathering on system that may be infected.
-## _______________________________________________
+##
 
 #### Examine the local system for a quick analysis.  Sometimes you may get an alert or need to investigate something and want to pull some local system information.
 #### This script can pull services, local users, network configuration and other items.
 
-#### To enable or disable a line, edit the file and add/remove rem.
+#### To enable or disable a line, edit the file and add/remove REM.
 
-#### This script call other programs such as
-#### -- some nirsoft tools
-#### -- some sysinternals tools
-#### These are prerequisites.
-
-## 
-
-
-**Run local or remote with psexec.**  (Download PSExec from Microsoft and place in C:\PsTools\ or modify as desired)
+#### This script calls other programs such as (These are prerequisites if you wish to enable):
+```
+- some nirsoft tools
+- some sysinternals tools
+```
 
 ## 
 
-Some adjustments do need to be made in the file.
 
-1.  Create a C:\Analysis folder
+**Run local or remote with psexec.**  (Download PSExec from Microsoft and place in C:\Analysis\ or modify as desired)
 
-2.  Download files and extact to it C:\Analysis
+## 
+
+***DATA the Script will Gather - Commands to Enable/Disable (edit the file and add/remove REM)***
+```
+	Autoruns VirusTotal lookup
+	Autoruns
+	Browsing History
+	Last Activity View
+	USB Device View
+	PS Info
+	RAM Map collection
+	PS Logged On
+	TCP End Point Viewer
+	TCP Converstion
+	Task List (Several different switches)
+	WMIC to capture startup
+	System Info output
+	Event log export (Security, System, Applicatrion, Powershell)
+	Scheduled Task output
+	IpConfig
+	Arp output
+	Hosts file copy to verify if changed
+	Netstat (Several different switches)
+	Route Print
+	NetSH WLAN
+	WMIC Get Installed software
+	WMIC Get local system accounts
+	WMIC Get Services and Process List
+	WMIC Shares
+	Admin Group list
+	Remote Desktop User List
+	Scheduled Jobs
+	Find Files (Adjustment/Tuning needed)
+	Update McAfee
+	Update Windows Defender
+```	
+
+## Some adjustments do need to be made in the file.
+
+1.  Create a C:\Analysis\ folder
+
+2.  Download files and extact to it C:\Analysis\
 
 3.  Edit 'Working.bat'
-    --REQUIREMENTS:   **SET LINE 29 of 'Working.bat'**
+    --REQUIREMENTS:   **SET LINE 14 of 'Working.bat'**
     -- Need a \\server\share\ and 
 	          a sub folder called Utilities
 	          a sub folder called SystemOutput
@@ -55,8 +91,11 @@ From Nirsoft:
 ```
      
 5.  Edit 'Computers.txt' with your computernames
-6.  Edit 'LaunchAnalysis.bat' and adjust with your <domain\username>
-7.  Run from **elevated** command prompt:  'C:\Analysis\LaunchAnalysis.bat'
-
+7.  Run from **elevated** command prompt:  
+  Local run: 'C:\Analysis\LaunchAnalysis.bat'
+  Remote run: 
+    C:\Analysis\PsExec64.exe \\computername -u domain\<username> -w c:\temp -f -e -h -c "C:\Analysis\Working.bat"
+or with list of computers in file.
+    C:\Analysis\PsExec64.exe @c:\analysis\computers.txt -u domain\<username> -w c:\temp -f -e -h -c "C:\Analysis\Working.bat"
 
 NOT COMPLETED:  Check Back in a few Weeks.

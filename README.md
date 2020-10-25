@@ -62,6 +62,7 @@
 2.  Download files and extact to it C:\Analysis\
 
 3.  Edit 'Working.bat'
+```
     --REQUIREMENTS:   **SET LINE 14 of 'Working.bat'**
     -- Need a \\server\share\ and 
 	          a sub folder called Utilities
@@ -73,7 +74,7 @@ ie.  \\Server\Share\
     -- Drive 'L:' for map drive - auto created and destroyed on target computer  (L: Drive is a \\Server\Share location)
     
     -- Need admin permissions to run on target system and also modify on L: drive location
-    
+```    
 4.  **Place all these files in \\Server\Share\Utilities**
 ```
 (Google for download locations)

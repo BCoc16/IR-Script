@@ -1,7 +1,8 @@
 @ECHO off
 TITLE Basic Analysis Run.
+REM  - Author Bryce Candelora
 
-REM - Set LINE 14
+REM - Set LINE 1
 rem  REQUIREMENTS: need a \\server\share\utilities folder and 'L:' for map drive
 rem					need admin to run on target system and also modify on L: drive location
 

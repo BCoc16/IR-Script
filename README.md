@@ -97,10 +97,10 @@ From Nirsoft:
 5.  Edit 'Computers.txt' with your computernames
 7.  Run from **elevated** command prompt:  
   Local run: 'C:\Analysis\LaunchAnalysis.bat'
-  Remote run: 
-    C:\Analysis\PsExec64.exe \\computername -u domain\<username> -w c:\temp -f -e -h -c "C:\Analysis\Working.bat"
-or with list of computers in file.
-    C:\Analysis\PsExec64.exe @c:\analysis\computers.txt -u domain\<username> -w c:\temp -f -e -h -c "C:\Analysis\Working.bat"
-
+- Remote run: 
+-       C:\Analysis\PsExec64.exe \\computername -u domain\<username> -w c:\temp -f -e -h -c "C:\Analysis\Working.bat"
+- or with list of computers in file.
+-       C:\Analysis\PsExec64.exe @c:\analysis\computers.txt -u domain\<username> -w c:\temp -f -e -h -c "C:\Analysis\Working.bat"
+##
 ![Sample](https://github.com/BCoc16/IR-Script/blob/master/Working1.png)
 

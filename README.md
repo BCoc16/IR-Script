@@ -1,7 +1,7 @@
 # IR-Script       :+1:
 ### Compilation of commands entered into a script for Information Gathering on system that may be infected.
 ##
-
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. YOU MAY USE THIS SOFTWARE AT YOUR OWN RISK. THE USE IS COMPLETE RESPONSIBILITY OF THE END-USER. THE DEVELOPERS ASSUME NO LIABILITY AND ARE NOT RESPONSIBLE FOR ANY MISUSE OR DAMAGE CAUSED BY THIS PROGRAM.
 #### Examine the local system for a quick analysis.  Sometimes you may get an alert or need to investigate something and want to pull some local system information.
 #### This script can pull services, local users, network configuration and other items.
 
